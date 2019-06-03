@@ -1,12 +1,12 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class EnglishViewController: UIViewController {
     var audioPlayer: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     @IBAction func checkBtn(_ sender: Any) {
@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: AVAudioPlayerDelegate {
+extension EnglishViewController: AVAudioPlayerDelegate {
     
     func playMusic() {
         if let music = NSDataAsset(name: "dokiri") {

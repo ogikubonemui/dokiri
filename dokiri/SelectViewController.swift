@@ -13,6 +13,15 @@ class SelectViewController: UIViewController {
         
     }
     
+    @IBAction func didClickBtnEnglish(_ sender: Any) {
+    }
+    
+    @IBAction func didClickBtnChinese(_ sender: Any) {
+    }
+    
+    @IBAction func didClickBtnKorean(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

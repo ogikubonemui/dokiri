@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3100251022A4B85C008455A4 /* EnglishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3100250F22A4B85C008455A4 /* EnglishViewController.swift */; };
+		3100251222A4BB41008455A4 /* KoreanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3100251122A4BB41008455A4 /* KoreanViewController.swift */; };
+		3100251422A4BB54008455A4 /* ChineseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3100251322A4BB54008455A4 /* ChineseViewController.swift */; };
 		310C687322A408B9009AE625 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C687222A408B9009AE625 /* SelectViewController.swift */; };
 		3140C8E7229EC5A200384647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3140C8E6229EC5A200384647 /* AppDelegate.swift */; };
 		3140C8E9229EC5A200384647 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3140C8E8229EC5A200384647 /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3100250F22A4B85C008455A4 /* EnglishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishViewController.swift; sourceTree = "<group>"; };
+		3100251122A4BB41008455A4 /* KoreanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanViewController.swift; sourceTree = "<group>"; };
+		3100251322A4BB54008455A4 /* ChineseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseViewController.swift; sourceTree = "<group>"; };
 		310C687222A408B9009AE625 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		3140C8E3229EC5A200384647 /* dokiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dokiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3140C8E6229EC5A200384647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +48,7 @@
 		3140C8DA229EC5A200384647 = {
 			isa = PBXGroup;
 			children = (
+				3100250F22A4B85C008455A4 /* EnglishViewController.swift */,
 				3140C8E5229EC5A200384647 /* dokiri */,
 				3140C8E4229EC5A200384647 /* Products */,
 			);
@@ -62,6 +69,8 @@
 				3140C8E6229EC5A200384647 /* AppDelegate.swift */,
 				3140C8E8229EC5A200384647 /* ViewController.swift */,
 				3140C8EA229EC5A200384647 /* Main.storyboard */,
+				3100251122A4BB41008455A4 /* KoreanViewController.swift */,
+				3100251322A4BB54008455A4 /* ChineseViewController.swift */,
 				310C687222A408B9009AE625 /* SelectViewController.swift */,
 				3140C8ED229EC5A300384647 /* Assets.xcassets */,
 				3140C8EF229EC5A300384647 /* LaunchScreen.storyboard */,
@@ -147,9 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3100251422A4BB54008455A4 /* ChineseViewController.swift in Sources */,
 				3140C8E9229EC5A200384647 /* ViewController.swift in Sources */,
+				3100251222A4BB41008455A4 /* KoreanViewController.swift in Sources */,
 				310C687322A408B9009AE625 /* SelectViewController.swift in Sources */,
 				3140C8E7229EC5A200384647 /* AppDelegate.swift in Sources */,
+				3100251022A4B85C008455A4 /* EnglishViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

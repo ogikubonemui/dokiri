@@ -27,6 +27,36 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="z5A-Tv-Old"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7N0-1v-GtM">
+                                <rect key="frame" x="293" y="172" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="English"/>
+                                <connections>
+                                    <action selector="didClickBtnEnglish:" destination="zT9-fK-dGg" eventType="touchUpInside" id="BBY-0B-mNE"/>
+                                    <action selector="didClickBtnJapan:" destination="zT9-fK-dGg" eventType="touchUpInside" id="bq0-cT-dKM"/>
+                                    <segue destination="Hbk-w5-QmK" kind="show" id="upV-tm-SBx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4d-ai-Zo1">
+                                <rect key="frame" x="445" y="172" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Chinese"/>
+                                <connections>
+                                    <action selector="didClickBtnChinese:" destination="zT9-fK-dGg" eventType="touchUpInside" id="DBA-uR-ilD"/>
+                                    <action selector="didClickBtnJapan:" destination="zT9-fK-dGg" eventType="touchUpInside" id="kE9-N4-NLl"/>
+                                    <segue destination="NTE-2x-xAT" kind="show" id="M25-Vu-FlD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yK2-R0-vRA">
+                                <rect key="frame" x="630" y="172" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Korean"/>
+                                <connections>
+                                    <action selector="didClickBtnJapan:" destination="zT9-fK-dGg" eventType="touchUpInside" id="SmM-Ss-Qb9"/>
+                                    <action selector="didClickBtnKorean:" destination="zT9-fK-dGg" eventType="touchUpInside" id="LKv-Wy-ezP"/>
+                                    <segue destination="rO9-UM-IZU" kind="show" id="N3N-bm-SXT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="3so-Mh-7VW"/>
@@ -34,7 +64,137 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SIr-Tg-4Jb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="91" y="-949"/>
+            <point key="canvasLocation" x="90.886699507389167" y="-949.60000000000002"/>
+        </scene>
+        <!--English View Controller-->
+        <scene sceneID="moJ-PZ-DHV">
+            <objects>
+                <viewController id="Hbk-w5-QmK" customClass="EnglishViewController" customModule="dokiri" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zdb-Rw-nha">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="prank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ivk-EU-cMU">
+                                <rect key="frame" x="344" y="156" width="125" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfG-rv-A7K">
+                                <rect key="frame" x="687" y="331" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="return"/>
+                                <connections>
+                                    <segue destination="zT9-fK-dGg" kind="show" id="MrH-Te-5FE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKC-1I-5Y6">
+                                <rect key="frame" x="677" y="238" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="checkBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9uh-So-GMH"/>
+                                    <action selector="checkBtn:" destination="Hbk-w5-QmK" eventType="touchUpInside" id="opf-V3-XMK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="m6G-sE-VEz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gRc-Qr-mEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796.55172413793105" y="-386.39999999999998"/>
+        </scene>
+        <!--Chinese View Controller-->
+        <scene sceneID="ciJ-X6-cfL">
+            <objects>
+                <viewController id="NTE-2x-xAT" customClass="ChineseViewController" customModule="dokiri" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n6M-iF-OHr">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyf-sl-q2b">
+                                <rect key="frame" x="328" y="143" width="157" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">恶作剧
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKV-s6-6d2">
+                                <rect key="frame" x="702" y="219" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="checkBtn:" destination="NTE-2x-xAT" eventType="touchUpInside" id="67K-fU-JeB"/>
+                                    <action selector="checkBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bd6-y8-pZ4"/>
+                                    <action selector="checkBtn:" destination="Hbk-w5-QmK" eventType="touchUpInside" id="evs-yw-sdS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWk-7Y-YcJ">
+                                <rect key="frame" x="712" y="282" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="return"/>
+                                <connections>
+                                    <segue destination="zT9-fK-dGg" kind="show" id="eaY-4H-aSY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cBE-DC-MQe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D5m-SS-NJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="788" y="628"/>
+        </scene>
+        <!--Korean View Controller-->
+        <scene sceneID="NzY-og-mig">
+            <objects>
+                <viewController id="rO9-UM-IZU" customClass="KoreanViewController" customModule="dokiri" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZvW-mA-rjR">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxC-i7-vTS">
+                                <rect key="frame" x="328" y="156" width="90" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">장난
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpC-Nw-Gjx">
+                                <rect key="frame" x="729" y="244" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="checkBtn:" destination="NTE-2x-xAT" eventType="touchUpInside" id="EPx-hN-z2I"/>
+                                    <action selector="checkBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SPc-Hm-run"/>
+                                    <action selector="checkBtn:" destination="rO9-UM-IZU" eventType="touchUpInside" id="aLd-JL-mhZ"/>
+                                    <action selector="checkBtn:" destination="Hbk-w5-QmK" eventType="touchUpInside" id="eNQ-qd-kGm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDH-DZ-tVh">
+                                <rect key="frame" x="733" y="324" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="return"/>
+                                <connections>
+                                    <segue destination="zT9-fK-dGg" kind="show" id="qHe-dM-Kuj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rRr-Mz-Kl0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbN-bM-i9N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776" y="1573"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -45,14 +205,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="i000440_prank_red" translatesAutoresizingMaskIntoConstraints="NO" id="7eg-N5-DkV">
-                                <rect key="frame" x="0.0" y="5" width="802" height="370"/>
+                                <rect key="frame" x="57" y="25" width="699" height="324"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyi-KS-s20">
-                                <rect key="frame" x="13" y="0.0" width="799" height="375"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePp-wr-cLm">
+                                <rect key="frame" x="710" y="257" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="didClickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="By0-TP-dmf"/>
+                                    <action selector="checkBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IiL-a8-Y7P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpQ-Uv-a9i">
+                                <rect key="frame" x="712" y="319" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="return"/>
+                                <connections>
+                                    <segue destination="zT9-fK-dGg" kind="show" id="W10-Fm-qWT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -68,4 +237,7 @@
     <resources>
         <image name="i000440_prank_red" width="532" height="356"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="qHe-dM-Kuj"/>
+    </inferredMetricsTieBreakers>
 </document>

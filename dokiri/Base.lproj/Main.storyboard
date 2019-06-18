@@ -18,53 +18,88 @@
                         <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyZ-Ey-Jua">
-                                <rect key="frame" x="154" y="172" width="42" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Japan"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyZ-Ey-Jua">
+                                <rect key="frame" x="114" y="161" width="121" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="7fF-p4-Ytd"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="121" id="YIo-0G-EmH"/>
+                                    <constraint firstAttribute="width" secondItem="jyZ-Ey-Jua" secondAttribute="height" multiplier="121:80" id="pQy-JO-lZu"/>
+                                </constraints>
+                                <state key="normal" title="Japan" image="japan"/>
                                 <connections>
                                     <action selector="didClickBtnJapan:" destination="zT9-fK-dGg" eventType="touchUpInside" id="zt9-mC-Z6k"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="z5A-Tv-Old"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7N0-1v-GtM">
-                                <rect key="frame" x="293" y="172" width="50" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="English"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7N0-1v-GtM">
+                                <rect key="frame" x="285" y="161" width="121" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7N0-1v-GtM" secondAttribute="height" multiplier="121:80" id="B3u-fY-mDR"/>
+                                    <constraint firstAttribute="height" constant="80" id="Q3h-ZD-QKE"/>
+                                    <constraint firstAttribute="width" constant="121" id="xet-RW-n3i"/>
+                                </constraints>
+                                <state key="normal" title="English" image="english"/>
                                 <connections>
                                     <action selector="didClickBtnEnglish:" destination="zT9-fK-dGg" eventType="touchUpInside" id="BBY-0B-mNE"/>
                                     <action selector="didClickBtnJapan:" destination="zT9-fK-dGg" eventType="touchUpInside" id="bq0-cT-dKM"/>
                                     <segue destination="Hbk-w5-QmK" kind="show" id="upV-tm-SBx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4d-ai-Zo1">
-                                <rect key="frame" x="445" y="172" width="56" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Chinese"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4d-ai-Zo1">
+                                <rect key="frame" x="456" y="161" width="121" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="x4d-ai-Zo1" secondAttribute="height" multiplier="121:80" id="Nic-Uj-Gm1"/>
+                                    <constraint firstAttribute="width" constant="121" id="Oln-wO-7bz"/>
+                                    <constraint firstAttribute="height" constant="80" id="gk8-GS-UeC"/>
+                                </constraints>
+                                <state key="normal" title="Chinese" image="china"/>
                                 <connections>
                                     <action selector="didClickBtnChinese:" destination="zT9-fK-dGg" eventType="touchUpInside" id="DBA-uR-ilD"/>
                                     <action selector="didClickBtnJapan:" destination="zT9-fK-dGg" eventType="touchUpInside" id="kE9-N4-NLl"/>
                                     <segue destination="NTE-2x-xAT" kind="show" id="M25-Vu-FlD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yK2-R0-vRA">
-                                <rect key="frame" x="630" y="172" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Korean"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yK2-R0-vRA">
+                                <rect key="frame" x="627" y="161" width="121" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="5gn-Cx-CFv"/>
+                                    <constraint firstAttribute="width" constant="121" id="6WD-8M-wn5"/>
+                                </constraints>
+                                <state key="normal" title="Korean" image="korea"/>
                                 <connections>
                                     <action selector="didClickBtnJapan:" destination="zT9-fK-dGg" eventType="touchUpInside" id="SmM-Ss-Qb9"/>
                                     <action selector="didClickBtnKorean:" destination="zT9-fK-dGg" eventType="touchUpInside" id="LKv-Wy-ezP"/>
                                     <segue destination="rO9-UM-IZU" kind="show" id="N3N-bm-SXT"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dokiri_word" translatesAutoresizingMaskIntoConstraints="NO" id="KUq-nI-ccf">
+                                <rect key="frame" x="124" y="268" width="372" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QYs-cm-tpf"/>
+                                    <constraint firstAttribute="width" secondItem="KUq-nI-ccf" secondAttribute="height" multiplier="62:5" id="Y6W-0p-yFe"/>
+                                    <constraint firstAttribute="width" constant="372" id="d8x-Mr-VNL"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.96316177165346328" green="0.96192746579533306" blue="0.98348771466821583" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="x4d-ai-Zo1" firstAttribute="top" secondItem="3so-Mh-7VW" secondAttribute="top" constant="161" id="4Kf-8S-duO"/>
+                            <constraint firstItem="x4d-ai-Zo1" firstAttribute="leading" secondItem="7N0-1v-GtM" secondAttribute="trailing" constant="50" id="E2M-x2-ovn"/>
+                            <constraint firstItem="jyZ-Ey-Jua" firstAttribute="top" secondItem="3so-Mh-7VW" secondAttribute="top" constant="161" id="GVE-OZ-CTp"/>
+                            <constraint firstItem="yK2-R0-vRA" firstAttribute="top" secondItem="3so-Mh-7VW" secondAttribute="top" constant="161" id="KWb-3R-mUc"/>
+                            <constraint firstItem="7N0-1v-GtM" firstAttribute="top" secondItem="3so-Mh-7VW" secondAttribute="top" constant="161" id="QbF-F5-hfr"/>
+                            <constraint firstItem="jyZ-Ey-Jua" firstAttribute="leading" secondItem="3so-Mh-7VW" secondAttribute="leading" constant="70" id="Qrr-fI-mn2"/>
+                            <constraint firstItem="3so-Mh-7VW" firstAttribute="bottom" secondItem="KUq-nI-ccf" secondAttribute="bottom" constant="56" id="YYd-Tu-X6C"/>
+                            <constraint firstItem="yK2-R0-vRA" firstAttribute="leading" secondItem="x4d-ai-Zo1" secondAttribute="trailing" constant="50" id="aKs-EN-sUa"/>
+                            <constraint firstItem="7N0-1v-GtM" firstAttribute="leading" secondItem="jyZ-Ey-Jua" secondAttribute="trailing" constant="50" id="k3Y-Uu-nXB"/>
+                            <constraint firstItem="KUq-nI-ccf" firstAttribute="leading" secondItem="3so-Mh-7VW" secondAttribute="leading" constant="80" id="n0Z-Cz-JEt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3so-Mh-7VW"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SIr-Tg-4Jb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="90.886699507389167" y="-949.60000000000002"/>
+            <point key="canvasLocation" x="90.401785714285708" y="-950.72463768115949"/>
         </scene>
         <!--English View Controller-->
         <scene sceneID="moJ-PZ-DHV">
@@ -74,38 +109,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="prank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ivk-EU-cMU">
-                                <rect key="frame" x="344" y="156" width="125" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
-                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfG-rv-A7K">
-                                <rect key="frame" x="687" y="331" width="42" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="return"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfG-rv-A7K">
+                                <rect key="frame" x="661" y="285" width="57" height="29"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <state key="normal" title="Return">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="zT9-fK-dGg" kind="show" id="MrH-Te-5FE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKC-1I-5Y6">
-                                <rect key="frame" x="677" y="238" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKC-1I-5Y6">
+                                <rect key="frame" x="683" y="236" width="35" height="29"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="checkBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9uh-So-GMH"/>
                                     <action selector="checkBtn:" destination="Hbk-w5-QmK" eventType="touchUpInside" id="opf-V3-XMK"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dokiri_en" translatesAutoresizingMaskIntoConstraints="NO" id="U5A-RD-QdC">
+                                <rect key="frame" x="27" y="20" width="709" height="328"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="m6G-sE-VEz" firstAttribute="trailing" secondItem="ZfG-rv-A7K" secondAttribute="trailing" constant="50" id="2HE-3S-5vF"/>
+                            <constraint firstItem="hKC-1I-5Y6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m6G-sE-VEz" secondAttribute="leading" symbolic="YES" id="6PQ-Oe-k1v"/>
+                            <constraint firstItem="m6G-sE-VEz" firstAttribute="bottom" secondItem="ZfG-rv-A7K" secondAttribute="bottom" constant="40" id="Mws-5V-2pD"/>
+                            <constraint firstItem="ZfG-rv-A7K" firstAttribute="top" secondItem="hKC-1I-5Y6" secondAttribute="bottom" constant="20" id="NQx-0G-vEp"/>
+                            <constraint firstItem="ZfG-rv-A7K" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m6G-sE-VEz" secondAttribute="leading" symbolic="YES" id="QWJ-fl-DEs"/>
+                            <constraint firstItem="m6G-sE-VEz" firstAttribute="trailing" secondItem="hKC-1I-5Y6" secondAttribute="trailing" constant="50" id="hSE-Up-YaP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="m6G-sE-VEz"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gRc-Qr-mEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="796.55172413793105" y="-386.39999999999998"/>
+            <point key="canvasLocation" x="-792.85714285714289" y="1768.8"/>
         </scene>
         <!--Chinese View Controller-->
         <scene sceneID="ciJ-X6-cfL">
@@ -115,15 +159,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyf-sl-q2b">
-                                <rect key="frame" x="328" y="143" width="157" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">恶作剧
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
-                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKV-s6-6d2">
                                 <rect key="frame" x="702" y="219" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -142,6 +177,10 @@
                                     <segue destination="zT9-fK-dGg" kind="show" id="eaY-4H-aSY"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dokiri_chi" translatesAutoresizingMaskIntoConstraints="NO" id="6xu-Kf-WuR">
+                                <rect key="frame" x="64" y="63" width="595" height="276"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cBE-DC-MQe"/>
@@ -159,15 +198,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxC-i7-vTS">
-                                <rect key="frame" x="328" y="156" width="90" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">장난
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
-                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpC-Nw-Gjx">
                                 <rect key="frame" x="729" y="244" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -187,6 +217,10 @@
                                     <segue destination="zT9-fK-dGg" kind="show" id="qHe-dM-Kuj"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dokiri_kor" translatesAutoresizingMaskIntoConstraints="NO" id="2vs-y5-a33">
+                                <rect key="frame" x="92" y="32" width="595" height="276"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="rRr-Mz-Kl0"/>
@@ -204,40 +238,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="i000440_prank_red" translatesAutoresizingMaskIntoConstraints="NO" id="7eg-N5-DkV">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dokiri_jap" translatesAutoresizingMaskIntoConstraints="NO" id="7eg-N5-DkV">
                                 <rect key="frame" x="57" y="25" width="699" height="324"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7eg-N5-DkV" secondAttribute="height" multiplier="233:108" id="l04-bB-7gM"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePp-wr-cLm">
-                                <rect key="frame" x="710" y="257" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePp-wr-cLm">
+                                <rect key="frame" x="684" y="246" width="34" height="29"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <state key="normal" title="再生">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="checkBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IiL-a8-Y7P"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpQ-Uv-a9i">
-                                <rect key="frame" x="712" y="319" width="42" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="return"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpQ-Uv-a9i">
+                                <rect key="frame" x="684" y="295" width="34" height="29"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="zT9-fK-dGg" kind="show" id="W10-Fm-qWT"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FpQ-Uv-a9i" firstAttribute="top" secondItem="ePp-wr-cLm" secondAttribute="bottom" constant="20" id="7i7-AL-2Id"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7eg-N5-DkV" secondAttribute="trailing" constant="12" id="8aP-dU-wYC"/>
+                            <constraint firstItem="7eg-N5-DkV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="13" id="Icj-vS-Suo"/>
+                            <constraint firstItem="ePp-wr-cLm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="LIZ-c0-1dT"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="FpQ-Uv-a9i" secondAttribute="bottom" constant="30" id="Pkv-go-RmY"/>
+                            <constraint firstItem="FpQ-Uv-a9i" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="VZv-9w-FQm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ePp-wr-cLm" secondAttribute="trailing" constant="50" id="hHW-XW-Jr5"/>
+                            <constraint firstItem="7eg-N5-DkV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="sbk-f2-ll2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FpQ-Uv-a9i" secondAttribute="trailing" constant="50" id="vbf-QZ-3Pe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="82.019704433497537" y="125.59999999999999"/>
+            <point key="canvasLocation" x="-791.51785714285711" y="1060.8695652173915"/>
         </scene>
     </scenes>
     <resources>
-        <image name="i000440_prank_red" width="532" height="356"/>
+        <image name="china" width="400" height="267"/>
+        <image name="dokiri_chi" width="1970" height="970"/>
+        <image name="dokiri_en" width="2051" height="970"/>
+        <image name="dokiri_jap" width="1961" height="970"/>
+        <image name="dokiri_kor" width="1994" height="970"/>
+        <image name="dokiri_word" width="1966" height="174"/>
+        <image name="english" width="400" height="267"/>
+        <image name="japan" width="400" height="267"/>
+        <image name="korea" width="400" height="267"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qHe-dM-Kuj"/>
+        <segue reference="MrH-Te-5FE"/>
     </inferredMetricsTieBreakers>
 </document>

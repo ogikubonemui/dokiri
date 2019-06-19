@@ -76,7 +76,7 @@
                             <constraint firstItem="7N0-1v-GtM" firstAttribute="top" secondItem="3so-Mh-7VW" secondAttribute="top" constant="170" id="QbF-F5-hfr"/>
                             <constraint firstItem="jyZ-Ey-Jua" firstAttribute="leading" secondItem="3so-Mh-7VW" secondAttribute="leading" constant="100" id="Qrr-fI-mn2"/>
                             <constraint firstItem="3so-Mh-7VW" firstAttribute="trailing" secondItem="yK2-R0-vRA" secondAttribute="trailing" constant="151" id="bWl-5e-uIL"/>
-                            <constraint firstItem="yK2-R0-vRA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="x4d-ai-Zo1" secondAttribute="trailing" symbolic="YES" id="otR-wy-I5B"/>
+                            <constraint firstItem="yK2-R0-vRA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="x4d-ai-Zo1" secondAttribute="trailing" constant="8" symbolic="YES" id="otR-wy-I5B"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3so-Mh-7VW"/>
                     </view>
@@ -93,16 +93,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfG-rv-A7K">
-                                <rect key="frame" x="661" y="285" width="57" height="29"/>
-                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
-                                <state key="normal" title="Return">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="zT9-fK-dGg" kind="show" id="MrH-Te-5FE"/>
-                                </connections>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dokiri_en" translatesAutoresizingMaskIntoConstraints="NO" id="U5A-RD-QdC">
+                                <rect key="frame" x="21" y="23" width="709" height="328"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKC-1I-5Y6">
                                 <rect key="frame" x="683" y="236" width="35" height="29"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
@@ -114,9 +107,16 @@
                                     <action selector="checkBtn:" destination="Hbk-w5-QmK" eventType="touchUpInside" id="opf-V3-XMK"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dokiri_en" translatesAutoresizingMaskIntoConstraints="NO" id="U5A-RD-QdC">
-                                <rect key="frame" x="21" y="23" width="709" height="328"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfG-rv-A7K">
+                                <rect key="frame" x="661" y="285" width="57" height="29"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <state key="normal" title="Return">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zT9-fK-dGg" kind="show" id="MrH-Te-5FE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -146,6 +146,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dokiri_chi" translatesAutoresizingMaskIntoConstraints="NO" id="6xu-Kf-WuR">
+                                <rect key="frame" x="64" y="43" width="672" height="311"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWk-7Y-YcJ">
+                                <rect key="frame" x="684" y="285" width="34" height="29"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <state key="normal" title="回报">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zT9-fK-dGg" kind="show" id="eaY-4H-aSY"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKV-s6-6d2">
                                 <rect key="frame" x="684" y="236" width="34" height="29"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
@@ -158,19 +171,6 @@
                                     <action selector="checkBtn:" destination="Hbk-w5-QmK" eventType="touchUpInside" id="evs-yw-sdS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWk-7Y-YcJ">
-                                <rect key="frame" x="684" y="285" width="34" height="29"/>
-                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
-                                <state key="normal" title="回报">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="zT9-fK-dGg" kind="show" id="eaY-4H-aSY"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dokiri_chi" translatesAutoresizingMaskIntoConstraints="NO" id="6xu-Kf-WuR">
-                                <rect key="frame" x="64" y="43" width="672" height="311"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -200,6 +200,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dokiri_kor" translatesAutoresizingMaskIntoConstraints="NO" id="2vs-y5-a33">
+                                <rect key="frame" x="65" y="32" width="650" height="300"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDH-DZ-tVh">
+                                <rect key="frame" x="682" y="303" width="30" height="32"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="재생">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zT9-fK-dGg" kind="show" id="qHe-dM-Kuj"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpC-Nw-Gjx">
                                 <rect key="frame" x="652" y="255" width="65" height="29"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
@@ -213,19 +226,6 @@
                                     <action selector="checkBtn:" destination="Hbk-w5-QmK" eventType="touchUpInside" id="eNQ-qd-kGm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDH-DZ-tVh">
-                                <rect key="frame" x="682" y="303" width="30" height="32"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="재생">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="zT9-fK-dGg" kind="show" id="qHe-dM-Kuj"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dokiri_kor" translatesAutoresizingMaskIntoConstraints="NO" id="2vs-y5-a33">
-                                <rect key="frame" x="65" y="32" width="650" height="300"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -309,6 +309,6 @@
         <image name="dokiri_kor" width="1994" height="970"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qHe-dM-Kuj"/>
+        <segue reference="W10-Fm-qWT"/>
     </inferredMetricsTieBreakers>
 </document>

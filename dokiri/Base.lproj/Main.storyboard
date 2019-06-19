@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyZ-Ey-Jua">
-                                <rect key="frame" x="144" y="170" width="78" height="29"/>
-                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <rect key="frame" x="104" y="170" width="118" height="41"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
                                 <state key="normal" title="Japanese">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="didClickBtnJapan:" destination="zT9-fK-dGg" eventType="touchUpInside" id="zt9-mC-Z6k"/>
@@ -30,10 +30,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7N0-1v-GtM">
-                                <rect key="frame" x="292" y="170" width="59" height="29"/>
-                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <rect key="frame" x="262" y="170" width="90" height="41"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
                                 <state key="normal" title="English">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="didClickBtnEnglish:" destination="zT9-fK-dGg" eventType="touchUpInside" id="BBY-0B-mNE"/>
@@ -42,10 +42,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4d-ai-Zo1">
-                                <rect key="frame" x="421" y="170" width="66" height="29"/>
-                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <rect key="frame" x="392" y="170" width="99" height="41"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
                                 <state key="normal" title="Chinese">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="didClickBtnChinese:" destination="zT9-fK-dGg" eventType="touchUpInside" id="DBA-uR-ilD"/>
@@ -53,11 +53,17 @@
                                     <segue destination="NTE-2x-xAT" kind="show" id="M25-Vu-FlD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yK2-R0-vRA">
-                                <rect key="frame" x="557" y="170" width="60" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用言語を選んでください - Please chose your language." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyr-8g-Tas">
+                                <rect key="frame" x="104" y="89" width="708" height="17"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yK2-R0-vRA">
+                                <rect key="frame" x="531" y="170" width="88" height="41"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
                                 <state key="normal" title="Korean">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="didClickBtnJapan:" destination="zT9-fK-dGg" eventType="touchUpInside" id="SmM-Ss-Qb9"/>
@@ -65,18 +71,33 @@
                                     <segue destination="rO9-UM-IZU" kind="show" id="N3N-bm-SXT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3R-mD-YhB">
+                                <rect key="frame" x="102" y="265" width="236" height="29"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <state key="normal" title="▶使い方ページ - How to Use">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bfu-6L-QNz" kind="show" id="FIZ-ga-fXa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96316177165346328" green="0.96192746579533306" blue="0.98348771466821583" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="x4d-ai-Zo1" firstAttribute="top" secondItem="3so-Mh-7VW" secondAttribute="top" constant="170" id="4Kf-8S-duO"/>
-                            <constraint firstItem="x4d-ai-Zo1" firstAttribute="leading" secondItem="7N0-1v-GtM" secondAttribute="trailing" constant="70" id="BQH-Bk-lyc"/>
-                            <constraint firstItem="jyZ-Ey-Jua" firstAttribute="top" secondItem="3so-Mh-7VW" secondAttribute="top" constant="170" id="GVE-OZ-CTp"/>
-                            <constraint firstItem="yK2-R0-vRA" firstAttribute="top" secondItem="3so-Mh-7VW" secondAttribute="top" constant="170" id="GsR-Yq-1dC"/>
-                            <constraint firstItem="7N0-1v-GtM" firstAttribute="leading" secondItem="jyZ-Ey-Jua" secondAttribute="trailing" constant="70" id="KcR-E1-aPN"/>
-                            <constraint firstItem="7N0-1v-GtM" firstAttribute="top" secondItem="3so-Mh-7VW" secondAttribute="top" constant="170" id="QbF-F5-hfr"/>
-                            <constraint firstItem="jyZ-Ey-Jua" firstAttribute="leading" secondItem="3so-Mh-7VW" secondAttribute="leading" constant="100" id="Qrr-fI-mn2"/>
-                            <constraint firstItem="3so-Mh-7VW" firstAttribute="trailing" secondItem="yK2-R0-vRA" secondAttribute="trailing" constant="151" id="bWl-5e-uIL"/>
-                            <constraint firstItem="yK2-R0-vRA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="x4d-ai-Zo1" secondAttribute="trailing" constant="8" symbolic="YES" id="otR-wy-I5B"/>
+                            <constraint firstItem="7N0-1v-GtM" firstAttribute="leading" secondItem="jyZ-Ey-Jua" secondAttribute="trailing" constant="40" id="1t4-FN-eYG"/>
+                            <constraint firstItem="Xyr-8g-Tas" firstAttribute="top" secondItem="3so-Mh-7VW" secondAttribute="top" constant="89" id="7nQ-wr-QhL"/>
+                            <constraint firstItem="yK2-R0-vRA" firstAttribute="top" secondItem="Xyr-8g-Tas" secondAttribute="bottom" constant="64" id="CdB-bC-xUV"/>
+                            <constraint firstItem="v3R-mD-YhB" firstAttribute="leading" secondItem="3so-Mh-7VW" secondAttribute="leading" constant="58" id="RFO-jy-fT5"/>
+                            <constraint firstAttribute="trailing" secondItem="Xyr-8g-Tas" secondAttribute="trailing" id="RaN-xT-9dF"/>
+                            <constraint firstItem="jyZ-Ey-Jua" firstAttribute="top" secondItem="Xyr-8g-Tas" secondAttribute="bottom" constant="64" id="U8C-FW-2hD"/>
+                            <constraint firstItem="3so-Mh-7VW" firstAttribute="trailing" secondItem="yK2-R0-vRA" secondAttribute="trailing" constant="149" id="ZDe-EV-eSh"/>
+                            <constraint firstItem="x4d-ai-Zo1" firstAttribute="leading" secondItem="7N0-1v-GtM" secondAttribute="trailing" constant="40" id="ZgS-cg-j1w"/>
+                            <constraint firstItem="jyZ-Ey-Jua" firstAttribute="leading" secondItem="3so-Mh-7VW" secondAttribute="leading" constant="60" id="ixe-Bu-IgY"/>
+                            <constraint firstItem="Xyr-8g-Tas" firstAttribute="leading" secondItem="3so-Mh-7VW" secondAttribute="leading" constant="60" id="k4K-gP-vaU"/>
+                            <constraint firstItem="3so-Mh-7VW" firstAttribute="bottom" secondItem="v3R-mD-YhB" secondAttribute="bottom" constant="60" id="nIQ-ZN-gcY"/>
+                            <constraint firstItem="yK2-R0-vRA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="x4d-ai-Zo1" secondAttribute="trailing" constant="8" symbolic="YES" id="ssR-fk-Yo7"/>
+                            <constraint firstItem="x4d-ai-Zo1" firstAttribute="top" secondItem="Xyr-8g-Tas" secondAttribute="bottom" constant="64" id="wVm-mk-bKr"/>
+                            <constraint firstItem="7N0-1v-GtM" firstAttribute="top" secondItem="Xyr-8g-Tas" secondAttribute="bottom" constant="64" id="xQ0-hZ-jcm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3so-Mh-7VW"/>
                     </view>
@@ -84,6 +105,79 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SIr-Tg-4Jb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="90.14778325123153" y="-951.20000000000005"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="T7D-KO-1PA">
+            <objects>
+                <viewController id="bfu-6L-QNz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l5j-xA-hK2">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6R-we-251">
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1sC-Vj-89F">
+                                        <rect key="frame" x="100" y="70" width="361" height="188"/>
+                                        <color key="backgroundColor" red="0.96494311094284058" green="0.96023637056350708" blue="0.98431771993637085" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="1sC-Vj-89F" secondAttribute="height" multiplier="343:187" constant="16.165775401069538" id="GcH-30-1eA"/>
+                                            <constraint firstAttribute="width" constant="361" id="cvq-bv-y96"/>
+                                            <constraint firstAttribute="height" constant="188" id="fCS-iX-fr0"/>
+                                        </constraints>
+                                        <string key="text">バラエティ番組でよく見る「ドッキリ」。
+これはドッキリのネタバラシをするときに使える
+アプリです。
+再生（Play）ボタンを押すことでおなじみのあの音楽が流れます。
+日本語のほか、英語、中国語、韓国語にも対応しているので、海外の友達にドッキリを仕掛けるときにも使えます。</string>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktf-t2-bRe">
+                                        <rect key="frame" x="104" y="265" width="365" height="29"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                        <state key="normal" title="▶トップページに戻る（Return to Top Page）">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="zT9-fK-dGg" kind="show" id="vX7-zo-y8b"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pose_dokkiri_daiseikou" translatesAutoresizingMaskIntoConstraints="NO" id="ZXm-eW-6lG">
+                                        <rect key="frame" x="496" y="78" width="234" height="218"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ZXm-eW-6lG" secondAttribute="height" multiplier="117:109" id="09z-Cs-tYQ"/>
+                                            <constraint firstAttribute="width" constant="234" id="LvR-Wn-gpd"/>
+                                            <constraint firstAttribute="height" constant="218" id="bcl-kI-cWW"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96494311094284058" green="0.96023637056350708" blue="0.98431771993637085" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="ZXm-eW-6lG" firstAttribute="top" secondItem="yZ3-Kt-AHK" secondAttribute="top" constant="78" id="2tI-f2-pW7"/>
+                                    <constraint firstItem="1sC-Vj-89F" firstAttribute="top" secondItem="V6R-we-251" secondAttribute="top" constant="70" id="8dP-ra-w3t"/>
+                                    <constraint firstItem="yZ3-Kt-AHK" firstAttribute="bottom" secondItem="ktf-t2-bRe" secondAttribute="bottom" constant="60" id="Bcg-tO-Z7o"/>
+                                    <constraint firstItem="ktf-t2-bRe" firstAttribute="leading" secondItem="yZ3-Kt-AHK" secondAttribute="leading" constant="60" id="HCt-aG-Feb"/>
+                                    <constraint firstItem="1sC-Vj-89F" firstAttribute="leading" secondItem="yZ3-Kt-AHK" secondAttribute="leading" constant="56" id="QlM-ul-bHf"/>
+                                    <constraint firstItem="yZ3-Kt-AHK" firstAttribute="trailing" secondItem="ZXm-eW-6lG" secondAttribute="trailing" constant="38" id="VgO-i7-I7G"/>
+                                    <constraint firstItem="ZXm-eW-6lG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ktf-t2-bRe" secondAttribute="trailing" constant="8" symbolic="YES" id="yUP-bI-gCU"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="yZ3-Kt-AHK"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="V6R-we-251" secondAttribute="trailing" id="Hmz-as-ZI9"/>
+                            <constraint firstAttribute="bottom" secondItem="V6R-we-251" secondAttribute="bottom" id="cOb-3h-gbC"/>
+                            <constraint firstItem="V6R-we-251" firstAttribute="top" secondItem="Mni-ef-KBc" secondAttribute="top" id="kdc-wK-Kz8"/>
+                            <constraint firstItem="V6R-we-251" firstAttribute="leading" secondItem="l5j-xA-hK2" secondAttribute="leading" id="prV-Wu-vCI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mni-ef-KBc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N2F-P2-QbL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="368.7192118226601" y="24.800000000000001"/>
         </scene>
         <!--English View Controller-->
         <scene sceneID="moJ-PZ-DHV">
@@ -307,8 +401,9 @@
         <image name="dokiri_en" width="2051" height="970"/>
         <image name="dokiri_jap" width="1961" height="970"/>
         <image name="dokiri_kor" width="1994" height="970"/>
+        <image name="pose_dokkiri_daiseikou" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="W10-Fm-qWT"/>
+        <segue reference="vX7-zo-y8b"/>
     </inferredMetricsTieBreakers>
 </document>

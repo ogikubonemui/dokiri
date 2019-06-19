@@ -118,7 +118,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1sC-Vj-89F">
-                                        <rect key="frame" x="100" y="70" width="361" height="188"/>
+                                        <rect key="frame" x="100" y="60" width="361" height="188"/>
                                         <color key="backgroundColor" red="0.96494311094284058" green="0.96023637056350708" blue="0.98431771993637085" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="1sC-Vj-89F" secondAttribute="height" multiplier="343:187" constant="16.165775401069538" id="GcH-30-1eA"/>
@@ -129,12 +129,13 @@
 これはドッキリのネタバラシをするときに使える
 アプリです。
 再生（Play）ボタンを押すことでおなじみのあの音楽が流れます。
-日本語のほか、英語、中国語、韓国語にも対応しているので、海外の友達にドッキリを仕掛けるときにも使えます。</string>
+
+This app is an app used to prank friends.Flashy music will play when you press the play button.</string>
                                         <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktf-t2-bRe">
-                                        <rect key="frame" x="104" y="265" width="365" height="29"/>
+                                        <rect key="frame" x="104" y="285" width="365" height="29"/>
                                         <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                         <state key="normal" title="▶トップページに戻る（Return to Top Page）">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -155,8 +156,8 @@
                                 <color key="backgroundColor" red="0.96494311094284058" green="0.96023637056350708" blue="0.98431771993637085" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="ZXm-eW-6lG" firstAttribute="top" secondItem="yZ3-Kt-AHK" secondAttribute="top" constant="78" id="2tI-f2-pW7"/>
-                                    <constraint firstItem="1sC-Vj-89F" firstAttribute="top" secondItem="V6R-we-251" secondAttribute="top" constant="70" id="8dP-ra-w3t"/>
-                                    <constraint firstItem="yZ3-Kt-AHK" firstAttribute="bottom" secondItem="ktf-t2-bRe" secondAttribute="bottom" constant="60" id="Bcg-tO-Z7o"/>
+                                    <constraint firstItem="1sC-Vj-89F" firstAttribute="top" secondItem="V6R-we-251" secondAttribute="top" constant="60" id="8dP-ra-w3t"/>
+                                    <constraint firstItem="yZ3-Kt-AHK" firstAttribute="bottom" secondItem="ktf-t2-bRe" secondAttribute="bottom" constant="40" id="Bcg-tO-Z7o"/>
                                     <constraint firstItem="ktf-t2-bRe" firstAttribute="leading" secondItem="yZ3-Kt-AHK" secondAttribute="leading" constant="60" id="HCt-aG-Feb"/>
                                     <constraint firstItem="1sC-Vj-89F" firstAttribute="leading" secondItem="yZ3-Kt-AHK" secondAttribute="leading" constant="56" id="QlM-ul-bHf"/>
                                     <constraint firstItem="yZ3-Kt-AHK" firstAttribute="trailing" secondItem="ZXm-eW-6lG" secondAttribute="trailing" constant="38" id="VgO-i7-I7G"/>
@@ -396,6 +397,6 @@
         <image name="pose_dokkiri_daiseikou" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qHe-dM-Kuj"/>
+        <segue reference="vX7-zo-y8b"/>
     </inferredMetricsTieBreakers>
 </document>

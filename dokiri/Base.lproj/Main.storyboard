@@ -191,8 +191,8 @@
                                 <rect key="frame" x="21" y="23" width="709" height="328"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKC-1I-5Y6">
-                                <rect key="frame" x="683" y="236" width="35" height="29"/>
-                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <rect key="frame" x="40" y="20" width="34" height="32"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                 <state key="normal" title="Play">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -202,7 +202,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfG-rv-A7K">
-                                <rect key="frame" x="661" y="285" width="57" height="29"/>
+                                <rect key="frame" x="701" y="326" width="57" height="29"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <state key="normal" title="Return">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -214,16 +214,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="m6G-sE-VEz" firstAttribute="trailing" secondItem="ZfG-rv-A7K" secondAttribute="trailing" constant="50" id="2HE-3S-5vF"/>
-                            <constraint firstItem="hKC-1I-5Y6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m6G-sE-VEz" secondAttribute="leading" symbolic="YES" id="6PQ-Oe-k1v"/>
-                            <constraint firstItem="m6G-sE-VEz" firstAttribute="bottom" secondItem="ZfG-rv-A7K" secondAttribute="bottom" constant="40" id="Mws-5V-2pD"/>
-                            <constraint firstItem="ZfG-rv-A7K" firstAttribute="top" secondItem="hKC-1I-5Y6" secondAttribute="bottom" constant="20" id="NQx-0G-vEp"/>
-                            <constraint firstItem="ZfG-rv-A7K" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m6G-sE-VEz" secondAttribute="leading" symbolic="YES" id="QWJ-fl-DEs"/>
                             <constraint firstItem="U5A-RD-QdC" firstAttribute="leading" secondItem="Zdb-Rw-nha" secondAttribute="leading" constant="21" id="f9X-35-ake"/>
                             <constraint firstItem="U5A-RD-QdC" firstAttribute="top" secondItem="m6G-sE-VEz" secondAttribute="top" constant="23" id="fVI-6O-dkN"/>
                             <constraint firstItem="m6G-sE-VEz" firstAttribute="trailing" secondItem="U5A-RD-QdC" secondAttribute="trailing" constant="38" id="gus-7m-sTq"/>
-                            <constraint firstItem="m6G-sE-VEz" firstAttribute="trailing" secondItem="hKC-1I-5Y6" secondAttribute="trailing" constant="50" id="hSE-Up-YaP"/>
                             <constraint firstItem="m6G-sE-VEz" firstAttribute="bottom" secondItem="U5A-RD-QdC" secondAttribute="bottom" constant="3" id="lAV-HP-GEY"/>
+                            <constraint firstItem="hKC-1I-5Y6" firstAttribute="top" secondItem="Zdb-Rw-nha" secondAttribute="top" constant="20" id="lgC-8u-Pvo"/>
+                            <constraint firstAttribute="bottom" secondItem="ZfG-rv-A7K" secondAttribute="bottom" constant="20" id="tZl-Uu-mdt"/>
+                            <constraint firstItem="hKC-1I-5Y6" firstAttribute="leading" secondItem="Zdb-Rw-nha" secondAttribute="leading" constant="40" id="xHG-SP-qwj"/>
+                            <constraint firstItem="m6G-sE-VEz" firstAttribute="trailing" secondItem="ZfG-rv-A7K" secondAttribute="trailing" constant="10" id="xWg-oG-iPQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="m6G-sE-VEz"/>
                     </view>
@@ -244,7 +242,7 @@
                                 <rect key="frame" x="64" y="43" width="672" height="311"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWk-7Y-YcJ">
-                                <rect key="frame" x="684" y="285" width="34" height="29"/>
+                                <rect key="frame" x="722" y="326" width="34" height="29"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <state key="normal" title="回报">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -254,7 +252,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKV-s6-6d2">
-                                <rect key="frame" x="684" y="236" width="34" height="29"/>
+                                <rect key="frame" x="40" y="20" width="34" height="29"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <state key="normal" title="播放">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -268,16 +266,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="cBE-DC-MQe" firstAttribute="bottom" secondItem="GWk-7Y-YcJ" secondAttribute="bottom" constant="40" id="5xc-5A-fMf"/>
-                            <constraint firstItem="KKV-s6-6d2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cBE-DC-MQe" secondAttribute="leading" symbolic="YES" id="9Z9-iP-YKP"/>
+                            <constraint firstAttribute="trailing" secondItem="GWk-7Y-YcJ" secondAttribute="trailing" constant="56" id="1fi-c2-Xkr"/>
                             <constraint firstItem="6xu-Kf-WuR" firstAttribute="top" secondItem="cBE-DC-MQe" secondAttribute="top" constant="43" id="LZw-rP-Sqb"/>
+                            <constraint firstItem="KKV-s6-6d2" firstAttribute="leading" secondItem="n6M-iF-OHr" secondAttribute="leading" constant="40" id="Mdi-9X-8Fp"/>
                             <constraint firstItem="6xu-Kf-WuR" firstAttribute="leading" secondItem="cBE-DC-MQe" secondAttribute="leading" constant="20" id="P5Q-zr-Ddq"/>
                             <constraint firstItem="6xu-Kf-WuR" firstAttribute="bottom" secondItem="cBE-DC-MQe" secondAttribute="bottom" id="Qfa-9I-Za0"/>
                             <constraint firstItem="cBE-DC-MQe" firstAttribute="trailing" secondItem="6xu-Kf-WuR" secondAttribute="trailing" constant="32" id="TU4-0G-Ex2"/>
-                            <constraint firstItem="GWk-7Y-YcJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cBE-DC-MQe" secondAttribute="leading" symbolic="YES" id="Y05-Vl-Dxq"/>
-                            <constraint firstItem="cBE-DC-MQe" firstAttribute="trailing" secondItem="GWk-7Y-YcJ" secondAttribute="trailing" constant="50" id="br2-Nr-kdz"/>
-                            <constraint firstItem="GWk-7Y-YcJ" firstAttribute="top" secondItem="KKV-s6-6d2" secondAttribute="bottom" constant="20" id="oqR-IK-Oc6"/>
-                            <constraint firstItem="cBE-DC-MQe" firstAttribute="trailing" secondItem="KKV-s6-6d2" secondAttribute="trailing" constant="50" id="pHs-xv-Nr0"/>
+                            <constraint firstItem="KKV-s6-6d2" firstAttribute="top" secondItem="n6M-iF-OHr" secondAttribute="top" constant="20" id="oPZ-Pn-bBq"/>
+                            <constraint firstAttribute="bottom" secondItem="GWk-7Y-YcJ" secondAttribute="bottom" constant="20" id="z3d-hB-VWB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cBE-DC-MQe"/>
                     </view>
@@ -298,7 +294,7 @@
                                 <rect key="frame" x="65" y="32" width="650" height="300"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDH-DZ-tVh">
-                                <rect key="frame" x="682" y="303" width="30" height="32"/>
+                                <rect key="frame" x="728" y="323" width="30" height="32"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="재생">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -308,7 +304,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpC-Nw-Gjx">
-                                <rect key="frame" x="652" y="255" width="65" height="29"/>
+                                <rect key="frame" x="40" y="20" width="65" height="29"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <state key="normal" title="돌아 가기">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -323,16 +319,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hpC-Nw-Gjx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rRr-Mz-Kl0" secondAttribute="leading" symbolic="YES" id="33X-h8-iRE"/>
                             <constraint firstItem="2vs-y5-a33" firstAttribute="top" secondItem="rRr-Mz-Kl0" secondAttribute="top" constant="32" id="Epg-Aq-TRL"/>
-                            <constraint firstAttribute="trailing" secondItem="TDH-DZ-tVh" secondAttribute="trailing" constant="100" id="G41-p9-F5X"/>
-                            <constraint firstAttribute="bottom" secondItem="TDH-DZ-tVh" secondAttribute="bottom" constant="40" id="I1m-NC-mTw"/>
                             <constraint firstItem="2vs-y5-a33" firstAttribute="leading" secondItem="rRr-Mz-Kl0" secondAttribute="leading" constant="21" id="IcK-UL-PBP"/>
-                            <constraint firstItem="TDH-DZ-tVh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rRr-Mz-Kl0" secondAttribute="leading" symbolic="YES" id="Q5E-zP-21P"/>
+                            <constraint firstItem="hpC-Nw-Gjx" firstAttribute="leading" secondItem="ZvW-mA-rjR" secondAttribute="leading" constant="40" id="UEl-C1-mFY"/>
+                            <constraint firstItem="rRr-Mz-Kl0" firstAttribute="trailing" secondItem="TDH-DZ-tVh" secondAttribute="trailing" constant="10" id="ZKM-4X-y6h"/>
+                            <constraint firstItem="hpC-Nw-Gjx" firstAttribute="top" secondItem="ZvW-mA-rjR" secondAttribute="top" constant="20" id="bcE-me-8Ci"/>
                             <constraint firstItem="rRr-Mz-Kl0" firstAttribute="bottom" secondItem="2vs-y5-a33" secondAttribute="bottom" constant="22" id="f1u-AM-rZW"/>
-                            <constraint firstAttribute="trailing" secondItem="hpC-Nw-Gjx" secondAttribute="trailing" constant="95" id="ful-KA-GYL"/>
                             <constraint firstItem="rRr-Mz-Kl0" firstAttribute="trailing" secondItem="2vs-y5-a33" secondAttribute="trailing" constant="53" id="i0Y-wd-Bug"/>
-                            <constraint firstItem="rRr-Mz-Kl0" firstAttribute="bottom" secondItem="hpC-Nw-Gjx" secondAttribute="bottom" constant="70" id="zQu-sG-5zL"/>
+                            <constraint firstAttribute="bottom" secondItem="TDH-DZ-tVh" secondAttribute="bottom" constant="20" id="kyK-0N-1gE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rRr-Mz-Kl0"/>
                     </view>
@@ -356,7 +350,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePp-wr-cLm">
-                                <rect key="frame" x="684" y="246" width="34" height="29"/>
+                                <rect key="frame" x="40" y="20" width="34" height="29"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <state key="normal" title="再生">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -366,7 +360,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpQ-Uv-a9i">
-                                <rect key="frame" x="684" y="295" width="34" height="29"/>
+                                <rect key="frame" x="722" y="326" width="34" height="29"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <state key="normal" title="戻る">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -378,15 +372,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="FpQ-Uv-a9i" firstAttribute="top" secondItem="ePp-wr-cLm" secondAttribute="bottom" constant="20" id="7i7-AL-2Id"/>
+                            <constraint firstAttribute="bottom" secondItem="FpQ-Uv-a9i" secondAttribute="bottom" constant="20" id="3NF-uU-gGt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7eg-N5-DkV" secondAttribute="trailing" constant="12" id="8aP-dU-wYC"/>
+                            <constraint firstItem="ePp-wr-cLm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="DXX-QU-bZW"/>
+                            <constraint firstAttribute="trailing" secondItem="FpQ-Uv-a9i" secondAttribute="trailing" constant="56" id="Hzf-67-vFY"/>
                             <constraint firstItem="7eg-N5-DkV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="13" id="Icj-vS-Suo"/>
-                            <constraint firstItem="ePp-wr-cLm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="LIZ-c0-1dT"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="FpQ-Uv-a9i" secondAttribute="bottom" constant="30" id="Pkv-go-RmY"/>
-                            <constraint firstItem="FpQ-Uv-a9i" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="VZv-9w-FQm"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ePp-wr-cLm" secondAttribute="trailing" constant="50" id="hHW-XW-Jr5"/>
+                            <constraint firstItem="ePp-wr-cLm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="epN-Bi-41K"/>
                             <constraint firstItem="7eg-N5-DkV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="sbk-f2-ll2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FpQ-Uv-a9i" secondAttribute="trailing" constant="50" id="vbf-QZ-3Pe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -404,6 +396,6 @@
         <image name="pose_dokkiri_daiseikou" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vX7-zo-y8b"/>
+        <segue reference="qHe-dM-Kuj"/>
     </inferredMetricsTieBreakers>
 </document>

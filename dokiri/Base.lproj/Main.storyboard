@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zT9-fK-dGg">
-    <device id="retina5_9" orientation="landscape">
+    <device id="retina6_1" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,12 @@
             <objects>
                 <viewController id="zT9-fK-dGg" customClass="SelectViewController" customModule="dokiri" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZEC-Xg-aWo">
-                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyZ-Ey-Jua">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyZ-Ey-Jua">
                                 <rect key="frame" x="104" y="170" width="118" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
                                 <state key="normal" title="Japanese">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -29,20 +30,9 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="z5A-Tv-Old"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7N0-1v-GtM">
-                                <rect key="frame" x="262" y="170" width="90" height="41"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
-                                <state key="normal" title="English">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="didClickBtnEnglish:" destination="zT9-fK-dGg" eventType="touchUpInside" id="BBY-0B-mNE"/>
-                                    <action selector="didClickBtnJapan:" destination="zT9-fK-dGg" eventType="touchUpInside" id="bq0-cT-dKM"/>
-                                    <segue destination="Hbk-w5-QmK" kind="show" id="upV-tm-SBx"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4d-ai-Zo1">
-                                <rect key="frame" x="392" y="170" width="99" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4d-ai-Zo1">
+                                <rect key="frame" x="431" y="170" width="138" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
                                 <state key="normal" title="Chinese">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -54,13 +44,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用言語を選んでください - Please chose your language." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyr-8g-Tas">
-                                <rect key="frame" x="104" y="89" width="708" height="17"/>
+                                <rect key="frame" x="104" y="89" width="792" height="17"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yK2-R0-vRA">
-                                <rect key="frame" x="531" y="170" width="88" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yK2-R0-vRA">
+                                <rect key="frame" x="610" y="170" width="88" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
                                 <state key="normal" title="Korean">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -72,7 +63,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3R-mD-YhB">
-                                <rect key="frame" x="102" y="265" width="236" height="29"/>
+                                <rect key="frame" x="102" y="304" width="236" height="29"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <state key="normal" title="▶使い方ページ - How to Use">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -81,41 +72,46 @@
                                     <segue destination="bfu-6L-QNz" kind="show" id="FIZ-ga-fXa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7N0-1v-GtM">
+                                <rect key="frame" x="297" y="169" width="90" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <state key="normal" title="English">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClickBtnEnglish:" destination="zT9-fK-dGg" eventType="touchUpInside" id="BBY-0B-mNE"/>
+                                    <action selector="didClickBtnJapan:" destination="zT9-fK-dGg" eventType="touchUpInside" id="bq0-cT-dKM"/>
+                                    <segue destination="Hbk-w5-QmK" kind="show" id="upV-tm-SBx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96316177165346328" green="0.96192746579533306" blue="0.98348771466821583" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="7N0-1v-GtM" firstAttribute="leading" secondItem="jyZ-Ey-Jua" secondAttribute="trailing" constant="40" id="1t4-FN-eYG"/>
+                            <constraint firstItem="3so-Mh-7VW" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="v3R-mD-YhB" secondAttribute="trailing" symbolic="YES" id="1mf-ss-bM4"/>
                             <constraint firstItem="Xyr-8g-Tas" firstAttribute="top" secondItem="3so-Mh-7VW" secondAttribute="top" constant="89" id="7nQ-wr-QhL"/>
-                            <constraint firstItem="yK2-R0-vRA" firstAttribute="top" secondItem="Xyr-8g-Tas" secondAttribute="bottom" constant="64" id="CdB-bC-xUV"/>
                             <constraint firstItem="v3R-mD-YhB" firstAttribute="leading" secondItem="3so-Mh-7VW" secondAttribute="leading" constant="58" id="RFO-jy-fT5"/>
                             <constraint firstAttribute="trailing" secondItem="Xyr-8g-Tas" secondAttribute="trailing" id="RaN-xT-9dF"/>
-                            <constraint firstItem="jyZ-Ey-Jua" firstAttribute="top" secondItem="Xyr-8g-Tas" secondAttribute="bottom" constant="64" id="U8C-FW-2hD"/>
-                            <constraint firstItem="3so-Mh-7VW" firstAttribute="trailing" secondItem="yK2-R0-vRA" secondAttribute="trailing" constant="149" id="ZDe-EV-eSh"/>
-                            <constraint firstItem="x4d-ai-Zo1" firstAttribute="leading" secondItem="7N0-1v-GtM" secondAttribute="trailing" constant="40" id="ZgS-cg-j1w"/>
-                            <constraint firstItem="jyZ-Ey-Jua" firstAttribute="leading" secondItem="3so-Mh-7VW" secondAttribute="leading" constant="60" id="ixe-Bu-IgY"/>
                             <constraint firstItem="Xyr-8g-Tas" firstAttribute="leading" secondItem="3so-Mh-7VW" secondAttribute="leading" constant="60" id="k4K-gP-vaU"/>
                             <constraint firstItem="3so-Mh-7VW" firstAttribute="bottom" secondItem="v3R-mD-YhB" secondAttribute="bottom" constant="60" id="nIQ-ZN-gcY"/>
-                            <constraint firstItem="yK2-R0-vRA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="x4d-ai-Zo1" secondAttribute="trailing" constant="8" symbolic="YES" id="ssR-fk-Yo7"/>
-                            <constraint firstItem="x4d-ai-Zo1" firstAttribute="top" secondItem="Xyr-8g-Tas" secondAttribute="bottom" constant="64" id="wVm-mk-bKr"/>
-                            <constraint firstItem="7N0-1v-GtM" firstAttribute="top" secondItem="Xyr-8g-Tas" secondAttribute="bottom" constant="64" id="xQ0-hZ-jcm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3so-Mh-7VW"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SIr-Tg-4Jb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="90.14778325123153" y="-951.20000000000005"/>
+            <point key="canvasLocation" x="89.732142857142847" y="-952.17391304347836"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="T7D-KO-1PA">
             <objects>
                 <viewController id="bfu-6L-QNz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l5j-xA-hK2">
-                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6R-we-251">
-                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1sC-Vj-89F">
                                         <rect key="frame" x="100" y="60" width="361" height="188"/>
@@ -130,12 +126,12 @@
 アプリです。
 再生（Play）ボタンを押すことでおなじみのあの音楽が流れます。
 
-This app is an app used to prank friends.Flashy music will play when you press the play button.</string>
+This app is used to prank friends.Flashy music plays when you press the play button.</string>
                                         <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktf-t2-bRe">
-                                        <rect key="frame" x="104" y="285" width="365" height="29"/>
+                                        <rect key="frame" x="104" y="324" width="365" height="29"/>
                                         <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                         <state key="normal" title="▶トップページに戻る（Return to Top Page）">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -145,7 +141,7 @@ This app is an app used to prank friends.Flashy music will play when you press t
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pose_dokkiri_daiseikou" translatesAutoresizingMaskIntoConstraints="NO" id="ZXm-eW-6lG">
-                                        <rect key="frame" x="496" y="78" width="234" height="218"/>
+                                        <rect key="frame" x="538" y="78" width="234" height="218"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ZXm-eW-6lG" secondAttribute="height" multiplier="117:109" id="09z-Cs-tYQ"/>
                                             <constraint firstAttribute="width" constant="234" id="LvR-Wn-gpd"/>
@@ -160,7 +156,7 @@ This app is an app used to prank friends.Flashy music will play when you press t
                                     <constraint firstItem="yZ3-Kt-AHK" firstAttribute="bottom" secondItem="ktf-t2-bRe" secondAttribute="bottom" constant="40" id="Bcg-tO-Z7o"/>
                                     <constraint firstItem="ktf-t2-bRe" firstAttribute="leading" secondItem="yZ3-Kt-AHK" secondAttribute="leading" constant="60" id="HCt-aG-Feb"/>
                                     <constraint firstItem="1sC-Vj-89F" firstAttribute="leading" secondItem="yZ3-Kt-AHK" secondAttribute="leading" constant="56" id="QlM-ul-bHf"/>
-                                    <constraint firstItem="yZ3-Kt-AHK" firstAttribute="trailing" secondItem="ZXm-eW-6lG" secondAttribute="trailing" constant="38" id="VgO-i7-I7G"/>
+                                    <constraint firstItem="yZ3-Kt-AHK" firstAttribute="trailing" secondItem="ZXm-eW-6lG" secondAttribute="trailing" constant="80" id="VgO-i7-I7G"/>
                                     <constraint firstItem="ZXm-eW-6lG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ktf-t2-bRe" secondAttribute="trailing" constant="8" symbolic="YES" id="yUP-bI-gCU"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="yZ3-Kt-AHK"/>
@@ -185,11 +181,11 @@ This app is an app used to prank friends.Flashy music will play when you press t
             <objects>
                 <viewController id="Hbk-w5-QmK" customClass="EnglishViewController" customModule="dokiri" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zdb-Rw-nha">
-                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dokiri_en" translatesAutoresizingMaskIntoConstraints="NO" id="U5A-RD-QdC">
-                                <rect key="frame" x="21" y="23" width="709" height="328"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dokiri_en3" translatesAutoresizingMaskIntoConstraints="NO" id="U5A-RD-QdC">
+                                <rect key="frame" x="21" y="23" width="775" height="367"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKC-1I-5Y6">
                                 <rect key="frame" x="40" y="20" width="34" height="32"/>
@@ -203,7 +199,7 @@ This app is an app used to prank friends.Flashy music will play when you press t
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfG-rv-A7K">
-                                <rect key="frame" x="701" y="326" width="57" height="29"/>
+                                <rect key="frame" x="755" y="365" width="57" height="29"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <state key="normal" title="Return">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -215,14 +211,16 @@ This app is an app used to prank friends.Flashy music will play when you press t
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="m6G-sE-VEz" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hKC-1I-5Y6" secondAttribute="trailing" symbolic="YES" id="9jT-sE-Ycf"/>
                             <constraint firstItem="U5A-RD-QdC" firstAttribute="leading" secondItem="Zdb-Rw-nha" secondAttribute="leading" constant="21" id="f9X-35-ake"/>
                             <constraint firstItem="U5A-RD-QdC" firstAttribute="top" secondItem="m6G-sE-VEz" secondAttribute="top" constant="23" id="fVI-6O-dkN"/>
-                            <constraint firstItem="m6G-sE-VEz" firstAttribute="trailing" secondItem="U5A-RD-QdC" secondAttribute="trailing" constant="38" id="gus-7m-sTq"/>
+                            <constraint firstItem="m6G-sE-VEz" firstAttribute="trailing" secondItem="U5A-RD-QdC" secondAttribute="trailing" constant="56" id="gus-7m-sTq"/>
                             <constraint firstItem="m6G-sE-VEz" firstAttribute="bottom" secondItem="U5A-RD-QdC" secondAttribute="bottom" constant="3" id="lAV-HP-GEY"/>
                             <constraint firstItem="hKC-1I-5Y6" firstAttribute="top" secondItem="Zdb-Rw-nha" secondAttribute="top" constant="20" id="lgC-8u-Pvo"/>
                             <constraint firstAttribute="bottom" secondItem="ZfG-rv-A7K" secondAttribute="bottom" constant="20" id="tZl-Uu-mdt"/>
+                            <constraint firstItem="ZfG-rv-A7K" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m6G-sE-VEz" secondAttribute="leading" symbolic="YES" id="tZo-Vh-pGa"/>
                             <constraint firstItem="hKC-1I-5Y6" firstAttribute="leading" secondItem="Zdb-Rw-nha" secondAttribute="leading" constant="40" id="xHG-SP-qwj"/>
-                            <constraint firstItem="m6G-sE-VEz" firstAttribute="trailing" secondItem="ZfG-rv-A7K" secondAttribute="trailing" constant="10" id="xWg-oG-iPQ"/>
+                            <constraint firstItem="m6G-sE-VEz" firstAttribute="trailing" secondItem="ZfG-rv-A7K" secondAttribute="trailing" constant="40" id="xWg-oG-iPQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="m6G-sE-VEz"/>
                     </view>
@@ -236,14 +234,14 @@ This app is an app used to prank friends.Flashy music will play when you press t
             <objects>
                 <viewController id="NTE-2x-xAT" customClass="ChineseViewController" customModule="dokiri" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n6M-iF-OHr">
-                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dokiri_chi" translatesAutoresizingMaskIntoConstraints="NO" id="6xu-Kf-WuR">
-                                <rect key="frame" x="64" y="43" width="672" height="311"/>
+                                <rect key="frame" x="64" y="43" width="756" height="350"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWk-7Y-YcJ">
-                                <rect key="frame" x="722" y="326" width="34" height="29"/>
+                                <rect key="frame" x="806" y="365" width="34" height="29"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <state key="normal" title="回报">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -273,6 +271,8 @@ This app is an app used to prank friends.Flashy music will play when you press t
                             <constraint firstItem="6xu-Kf-WuR" firstAttribute="leading" secondItem="cBE-DC-MQe" secondAttribute="leading" constant="20" id="P5Q-zr-Ddq"/>
                             <constraint firstItem="6xu-Kf-WuR" firstAttribute="bottom" secondItem="cBE-DC-MQe" secondAttribute="bottom" id="Qfa-9I-Za0"/>
                             <constraint firstItem="cBE-DC-MQe" firstAttribute="trailing" secondItem="6xu-Kf-WuR" secondAttribute="trailing" constant="32" id="TU4-0G-Ex2"/>
+                            <constraint firstItem="GWk-7Y-YcJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cBE-DC-MQe" secondAttribute="leading" symbolic="YES" id="dKP-gn-FgN"/>
+                            <constraint firstItem="cBE-DC-MQe" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KKV-s6-6d2" secondAttribute="trailing" symbolic="YES" id="o1r-tf-m3d"/>
                             <constraint firstItem="KKV-s6-6d2" firstAttribute="top" secondItem="n6M-iF-OHr" secondAttribute="top" constant="20" id="oPZ-Pn-bBq"/>
                             <constraint firstAttribute="bottom" secondItem="GWk-7Y-YcJ" secondAttribute="bottom" constant="20" id="z3d-hB-VWB"/>
                         </constraints>
@@ -288,14 +288,14 @@ This app is an app used to prank friends.Flashy music will play when you press t
             <objects>
                 <viewController id="rO9-UM-IZU" customClass="KoreanViewController" customModule="dokiri" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZvW-mA-rjR">
-                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dokiri_kor" translatesAutoresizingMaskIntoConstraints="NO" id="2vs-y5-a33">
-                                <rect key="frame" x="65" y="32" width="650" height="300"/>
+                                <rect key="frame" x="65" y="32" width="734" height="339"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDH-DZ-tVh">
-                                <rect key="frame" x="728" y="323" width="30" height="32"/>
+                                <rect key="frame" x="782" y="362" width="30" height="32"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="재생">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -321,9 +321,11 @@ This app is an app used to prank friends.Flashy music will play when you press t
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="2vs-y5-a33" firstAttribute="top" secondItem="rRr-Mz-Kl0" secondAttribute="top" constant="32" id="Epg-Aq-TRL"/>
+                            <constraint firstItem="TDH-DZ-tVh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rRr-Mz-Kl0" secondAttribute="leading" symbolic="YES" id="GFR-TC-sDr"/>
                             <constraint firstItem="2vs-y5-a33" firstAttribute="leading" secondItem="rRr-Mz-Kl0" secondAttribute="leading" constant="21" id="IcK-UL-PBP"/>
                             <constraint firstItem="hpC-Nw-Gjx" firstAttribute="leading" secondItem="ZvW-mA-rjR" secondAttribute="leading" constant="40" id="UEl-C1-mFY"/>
-                            <constraint firstItem="rRr-Mz-Kl0" firstAttribute="trailing" secondItem="TDH-DZ-tVh" secondAttribute="trailing" constant="10" id="ZKM-4X-y6h"/>
+                            <constraint firstItem="rRr-Mz-Kl0" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hpC-Nw-Gjx" secondAttribute="trailing" symbolic="YES" id="Uij-DQ-u2n"/>
+                            <constraint firstItem="rRr-Mz-Kl0" firstAttribute="trailing" secondItem="TDH-DZ-tVh" secondAttribute="trailing" constant="40" id="ZKM-4X-y6h"/>
                             <constraint firstItem="hpC-Nw-Gjx" firstAttribute="top" secondItem="ZvW-mA-rjR" secondAttribute="top" constant="20" id="bcE-me-8Ci"/>
                             <constraint firstItem="rRr-Mz-Kl0" firstAttribute="bottom" secondItem="2vs-y5-a33" secondAttribute="bottom" constant="22" id="f1u-AM-rZW"/>
                             <constraint firstItem="rRr-Mz-Kl0" firstAttribute="trailing" secondItem="2vs-y5-a33" secondAttribute="trailing" constant="53" id="i0Y-wd-Bug"/>
@@ -341,11 +343,11 @@ This app is an app used to prank friends.Flashy music will play when you press t
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dokiri" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dokiri_jap" translatesAutoresizingMaskIntoConstraints="NO" id="7eg-N5-DkV">
-                                <rect key="frame" x="57" y="25" width="699" height="324"/>
+                                <rect key="frame" x="57" y="25" width="783" height="363"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="7eg-N5-DkV" secondAttribute="height" multiplier="233:108" id="l04-bB-7gM"/>
                                 </constraints>
@@ -361,7 +363,7 @@ This app is an app used to prank friends.Flashy music will play when you press t
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpQ-Uv-a9i">
-                                <rect key="frame" x="722" y="326" width="34" height="29"/>
+                                <rect key="frame" x="806" y="365" width="34" height="29"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <state key="normal" title="戻る">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -378,7 +380,9 @@ This app is an app used to prank friends.Flashy music will play when you press t
                             <constraint firstItem="ePp-wr-cLm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="DXX-QU-bZW"/>
                             <constraint firstAttribute="trailing" secondItem="FpQ-Uv-a9i" secondAttribute="trailing" constant="56" id="Hzf-67-vFY"/>
                             <constraint firstItem="7eg-N5-DkV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="13" id="Icj-vS-Suo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ePp-wr-cLm" secondAttribute="trailing" symbolic="YES" id="NxR-Nt-JwT"/>
                             <constraint firstItem="ePp-wr-cLm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="epN-Bi-41K"/>
+                            <constraint firstItem="FpQ-Uv-a9i" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="esp-eU-RZ8"/>
                             <constraint firstItem="7eg-N5-DkV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="sbk-f2-ll2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -391,12 +395,12 @@ This app is an app used to prank friends.Flashy music will play when you press t
     </scenes>
     <resources>
         <image name="dokiri_chi" width="1970" height="970"/>
-        <image name="dokiri_en" width="2051" height="970"/>
+        <image name="dokiri_en3" width="2201" height="970"/>
         <image name="dokiri_jap" width="1961" height="970"/>
         <image name="dokiri_kor" width="1994" height="970"/>
         <image name="pose_dokkiri_daiseikou" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vX7-zo-y8b"/>
+        <segue reference="MrH-Te-5FE"/>
     </inferredMetricsTieBreakers>
 </document>
